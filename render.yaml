@@ -3,7 +3,7 @@ services:
     name: tnt-news-api
     runtime: node
     plan: free
-    buildCommand: npm install && npm run build && npm run db:migrate:prod
+    buildCommand: npm install && npm run build && npm run db:setup:prod
     startCommand: npm start
     healthCheckPath: /health
     envVars:

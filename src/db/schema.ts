@@ -25,5 +25,14 @@ export type NewUser = typeof users.$inferInsert;
 export type News = typeof news.$inferSelect;
 export type NewNews = typeof news.$inferInsert;
 
-export const NEWS_CATEGORIES = ['Tecnologia', 'Esporte', 'Arte', 'Outros'] as const;
+export const NEWS_CATEGORIES = [
+  'Frontend',
+  'Backend',
+  'DevOps',
+  'IA & Dados',
+  'Mobile',
+  'Open Source',
+  'Segurança',
+  'Carreira',
+] as const;
 export type NewsCategory = (typeof NEWS_CATEGORIES)[number];

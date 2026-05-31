@@ -12,6 +12,7 @@
     "db:migrate:prod": "node dist/db/migrate.js",
     "db:seed": "tsx src/db/seed.ts",
     "db:seed:prod": "node dist/db/seed.js",
+    "db:setup:prod": "npm run db:migrate:prod && npm run db:seed:prod",
     "test": "vitest run",
     "test:watch": "vitest"
   },
